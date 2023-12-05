@@ -1,0 +1,19 @@
+<div id="header">
+    <div id="logo">
+        <img 
+        [src]=" sidebarActive 
+        ?  'assets/images/menu-icon.svg ' 
+        : 'assets/images/menu-icon.svg '
+        "
+
+        (click) = " toggleSidebar.emit()"
+        />
+        Cinema
+    </div>
+
+    <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Watchlist</a>
+    </div>
+</div>
