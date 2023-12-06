@@ -2,14 +2,17 @@
 <div id="container" [ngClass]="{ sidebarActive : sidebarActive}" >
     <app-side-bar></app-side-bar>
     <div id="contentContainer">
-    
             <app-header 
             (toggleSidebar)="sidebarActive = !sidebarActive"
             [sidebarActive]="sidebarActive">
             </app-header>
-            <div id="content">Content</div>
+            <div id="content">
+                <app-movies-list></app-movies-list>
+                
+            </div>
         </div>
     </div>
+    <router-outlet></router-outlet>
 
 
 

@@ -1,0 +1,16 @@
+<!-- movie-card.component.html -->
+<div class="movie-card">
+    <img class="movie-thumbnail" [src]="movie.thumbnail" alt="Movie Thumbnail">
+    <div class="movie-details">
+      <h2 class="movie-title">{{ movie.title }}</h2>
+      <p class="movie-description">{{ movie.description }}</p>
+      <div class="movie-info">
+        <p class="movie-rating">Rating: {{ movie.rating }}</p>
+        <p class="movie-duration">Duration: {{ movie.duration }}</p>
+        <p class="movie-genre">Genre: {{ movie.genre.join(', ') }}</p>
+      </div>
+      <p class="movie-released-date">Released Date: {{ movie.releasedDate }}</p>
+      <a class="movie-trailer-link" [href]="movie.trailerLink" target="_blank">Watch Trailer</a>
+    </div>
+  </div>
+  

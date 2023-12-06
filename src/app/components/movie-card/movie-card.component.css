@@ -1,0 +1,76 @@
+/* movies-list.component.css (o tu archivo de estilos principal) */
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .movie-card {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-thumbnail {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .movie-details {
+    padding: 20px;
+  }
+  
+  .movie-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .movie-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .movie-info {
+    margin-bottom: 15px;
+  }
+  
+  .movie-rating,
+  .movie-duration,
+  .movie-genre {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .movie-released-date {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .movie-trailer-link {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
